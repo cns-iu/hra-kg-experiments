@@ -6,7 +6,7 @@ UBERON terms which are used to lookup related data.
 
 ## Data Products
 
-* [dGTEX Sample Annotations - Enriched from HRA related resources](output-data/dgtex-sample-annotations-enriched.csv) - The original tissue sample locations annotated with relevant data gathered from HRA, HRApop, and HPO.
+* [dGTEX Sample Annotations - Enriched from HRA related resources](output-data/dgtex-sample-annotations-enriched.xlsx) - The original tissue sample locations annotated with relevant data gathered from HRA, HRApop, and HPO.
 * [HRA ASCT+B Gene -> Disease](output-data/dgtex-hra-gene-disease.csv) - ASCT+B Gene -> Disease relationships limited to the dGTEx sample locations and developmental onset for the diseases.
 * [HRA ASCT+B Gene Evidence](output-data/dgtex-hra-gene-evidence.csv) - ASCT+B Gene relationships limited to the dGTEx sample locations.
 * [HRApop ASCT+B Gene -> Disease](output-data/dgtex-hra-pop-gene-disease.csv.gz) - ASCT+B Gene -> Disease relationships derived from experimental data (HRApop) limited to the dGTEx sample locations and developmental onset for the diseases.
