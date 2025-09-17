@@ -1,0 +1,96 @@
+#+ summary: Cell Summaries with gene information by Dataset
+#+ description: Computes the cell summaries plus genes and their mean gene expression for each organ by dataset.
+
+
+PREFIX hint: <http://www.bigdata.com/queryHints#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX part_of: <http://purl.obolibrary.org/obo/BFO_0000050>
+PREFIX UBERON: <http://purl.obolibrary.org/obo/UBERON_>
+PREFIX FMA: <http://purl.org/sig/ont/fma/fma>
+PREFIX HRA: <https://purl.humanatlas.io/collection/hra-api>
+PREFIX HRApop: <https://purl.humanatlas.io/graph/hra-pop>
+PREFIX HRApopFull: <https://purl.humanatlas.io/ds-graph/hra-pop-full>
+PREFIX HRApopTestData: <https://purl.humanatlas.io/graph/hra-pop#test-data>
+
+SELECT 
+  ?dataset
+  ?tool
+  ?as
+  ?ct
+  ?gene
+  ?cell_count
+  ?mean_gene_expr
+  ?as_label
+  ?ct_label
+  ?gene_label
+FROM HRA:
+FROM HRApop:
+FROM HRApopFull:
+FROM HRApopTestData:
+WHERE {
+  hint:Query hint:analytic "true" .
+
+  VALUES (?as) {
+    (UBERON:0000007) (UBERON:0000029) (UBERON:0000178) (UBERON:0000383) (UBERON:0000473) (UBERON:0000945) (UBERON:0000948) (UBERON:0000955) (UBERON:0000992) (UBERON:0000995) (UBERON:0001003) (UBERON:0001013) (UBERON:0001021) (UBERON:0001043) (UBERON:0001114) (UBERON:0001117) (UBERON:0001155) (UBERON:0001156) (UBERON:0001159) (UBERON:0001225) (UBERON:0001234) (UBERON:0001264) (UBERON:0001322) (UBERON:0001377) (UBERON:0001384) (UBERON:0001388) (UBERON:0001416) (UBERON:0001496) (UBERON:0001516) (UBERON:0001626) (UBERON:0001873) (UBERON:0001874) (UBERON:0001876) (UBERON:0001981) (UBERON:0002037) (UBERON:0002038) (UBERON:0002046) (UBERON:0002048) (UBERON:0002094) (UBERON:0002106) (UBERON:0002107) (UBERON:0002108) (UBERON:0002113) (UBERON:0002114) (UBERON:0002115) (UBERON:0002116) (UBERON:0002170) (UBERON:0002171) (UBERON:0002174) (UBERON:0002178) (UBERON:0002190) (UBERON:0002240) (UBERON:0002315) (UBERON:0002345) (UBERON:0002363) (UBERON:0002369) (UBERON:0002370) (UBERON:0002378) (UBERON:0002421) (UBERON:0002436) (UBERON:0002509) (UBERON:0002728) (UBERON:0002751) (UBERON:0003126) (UBERON:0003379) (UBERON:0003380) (UBERON:0003381) (UBERON:0003382) (UBERON:0004002) (UBERON:0004167) (UBERON:0004703) (UBERON:0005406) (UBERON:0008523) (UBERON:0008933) (UBERON:0008952) (UBERON:0008953) (UBERON:0009834) (UBERON:0009835) (UBERON:0010743) (UBERON:0013473) (UBERON:0014454) (UBERON:0015474) (UBERON:0034751) (UBERON:0039167) (UBERON:8410073) (UBERON:8480050) (UBERON:8480055)
+  }
+
+  {
+    SELECT DISTINCT ?dataset ?as_label ?as
+    WHERE {
+      VALUES (?as) {
+        (UBERON:0000007) (UBERON:0000029) (UBERON:0000178) (UBERON:0000383) (UBERON:0000473) (UBERON:0000945) (UBERON:0000948) (UBERON:0000955) (UBERON:0000992) (UBERON:0000995) (UBERON:0001003) (UBERON:0001013) (UBERON:0001021) (UBERON:0001043) (UBERON:0001114) (UBERON:0001117) (UBERON:0001155) (UBERON:0001156) (UBERON:0001159) (UBERON:0001225) (UBERON:0001234) (UBERON:0001264) (UBERON:0001322) (UBERON:0001377) (UBERON:0001384) (UBERON:0001388) (UBERON:0001416) (UBERON:0001496) (UBERON:0001516) (UBERON:0001626) (UBERON:0001873) (UBERON:0001874) (UBERON:0001876) (UBERON:0001981) (UBERON:0002037) (UBERON:0002038) (UBERON:0002046) (UBERON:0002048) (UBERON:0002094) (UBERON:0002106) (UBERON:0002107) (UBERON:0002108) (UBERON:0002113) (UBERON:0002114) (UBERON:0002115) (UBERON:0002116) (UBERON:0002170) (UBERON:0002171) (UBERON:0002174) (UBERON:0002178) (UBERON:0002190) (UBERON:0002240) (UBERON:0002315) (UBERON:0002345) (UBERON:0002363) (UBERON:0002369) (UBERON:0002370) (UBERON:0002378) (UBERON:0002421) (UBERON:0002436) (UBERON:0002509) (UBERON:0002728) (UBERON:0002751) (UBERON:0003126) (UBERON:0003379) (UBERON:0003380) (UBERON:0003381) (UBERON:0003382) (UBERON:0004002) (UBERON:0004167) (UBERON:0004703) (UBERON:0005406) (UBERON:0008523) (UBERON:0008933) (UBERON:0008952) (UBERON:0008953) (UBERON:0009834) (UBERON:0009835) (UBERON:0010743) (UBERON:0013473) (UBERON:0014454) (UBERON:0015474) (UBERON:0034751) (UBERON:0039167) (UBERON:8410073) (UBERON:8480050) (UBERON:8480055)
+      }
+
+      {
+        ?sample ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      } UNION {
+        ?block ccf:subdivided_into_sections ?sample .
+        ?block ccf:has_registration_location ?rui_location .
+        ?sample ccf:generates_dataset ?dataset .
+      }
+      ?rui_location ccf:has_collision_summary [
+        ccf:has_collision_item [
+          ccf:as_id ?as_child ;
+        ]
+      ] .
+      ?as_child ccf:ccf_part_of* ?as .
+      ?as rdfs:label ?as_label .
+      hint:SubQuery hint:runOnce true .
+    }
+  }
+  UNION
+  {
+    SELECT DISTINCT ?dataset ?as_label ?as
+    WHERE {
+      ?dataset ccf:organ_id ?reportedOrganIriString .
+      BIND(IRI(?reportedOrganIriString) as ?as)
+      ?as rdfs:label ?as_label .
+      hint:SubQuery hint:runOnce true .
+    }
+  }
+
+  ?dataset ccf:has_cell_summary [
+    ccf:cell_annotation_method ?tool ;
+    ccf:has_cell_summary_row [
+      ccf:cell_id ?ct ;
+      ccf:cell_count ?cell_count ;
+      ccf:gene_expr [
+        ccf:gene_label ?gene_label ;
+        ccf:gene_id ?geneId ;
+        ccf:mean_gene_expr_value ?mean_gene_expr ;
+      ]
+    ]
+  ] .
+  ?ct rdfs:label ?ct_label .
+
+  BIND(IRI(REPLACE(REPLACE(REPLACE(STR(?geneId), 
+    'HGNC:', 'http://identifiers.org/hgnc/'), 
+    'ASCTB-TEMP:', 'https://purl.org/ccf/ASCTB-TEMP_'),
+    'ensembl:', 'https://identifiers.org/ensembl:')
+  ) as ?gene)
+}

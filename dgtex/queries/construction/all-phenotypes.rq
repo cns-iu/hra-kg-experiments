@@ -1,0 +1,18 @@
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX HP: <http://purl.obolibrary.org/obo/HP_>
+
+SELECT DISTINCT ?phenotype ?phenotype_label
+FROM <https://purl.humanatlas.io/vocab/hp>
+FROM <https://purl.humanatlas.io/vocab/hp/redundant>
+WHERE {
+  ?phenotype_iri rdfs:subClassOf HP:0000118 ; # Phenotypic abnormality
+    rdfs:label ?phenotype_label .
+
+  BIND(REPLACE(STR(?phenotype_iri), STR(HP:), 'HP:') as ?phenotype)
+}
+ORDER BY ?phenotype

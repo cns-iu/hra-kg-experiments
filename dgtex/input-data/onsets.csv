@@ -1,0 +1,8 @@
+onset,onset_label,onset_def
+HP:0410280,Pediatric onset,"Onset of disease manifestations before adulthood, defined here as before the age of 16 years, but excluding neonatal or congenital onset."
+HP:0003577,Congenital onset,A phenotypic abnormality that is present at birth.
+HP:0003623,Neonatal onset,Onset of signs or symptoms of disease within the first 28 days of life.
+HP:0003593,Infantile onset,Onset of signs or symptoms of disease between 28 days to one year of life.
+HP:0011463,Childhood onset,Onset of disease at the age of between 1 and 5 years.
+HP:0003621,Juvenile onset,Onset of signs or symptoms of disease between the age of 5 and 15 years.
+HP:0025708,Early young adult onset,Onset of disease at an age of greater than or equal to 16 to under 19 years.
