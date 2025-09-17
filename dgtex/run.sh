@@ -62,3 +62,4 @@ gzip -k output-data/dgtex-hra-pop-gene-disease.csv
 
 # Enrich the input annotations with data we gathered here
 cat queries/construction/dgtex-sample-annotations-enriched.sql | duckdb | csvformat | perl -pe 's/http\:\/\/purl\.obolibrary\.org\/obo\/UBERON\_/UBERON:/g;s/http\:\/\/purl\.obolibrary\.org\/obo\/CL\_/CL:/g' > output-data/dgtex-sample-annotations-enriched.csv
+cat queries/construction/dgtex-sample-annotations-enriched-xlsx.sql | duckdb
