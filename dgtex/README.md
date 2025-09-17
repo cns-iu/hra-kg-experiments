@@ -4,6 +4,10 @@ This project was used to gather dGTEx relevant data from HRA and related resourc
 inform the further development of dGTEx. The dGTEX sample locations are annotated with
 UBERON terms which are used to lookup related data.
 
+## Connection Diagram
+
+![Connection Diagram](diagram.png)
+
 ## Data Products
 
 * [dGTEX Sample Annotations - Enriched from HRA related resources](output-data/dgtex-sample-annotations-enriched.xlsx) - The original tissue sample locations annotated with relevant data gathered from HRA, HRApop, and HPO.
