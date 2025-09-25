@@ -29,8 +29,18 @@ fi
 
 # Run queries
 
-# Get all possible phenotypes from HPO
+# Extract UBERON terms from input data
+csvcut -c SMTSUBRID input-data/dgtex-sample-annotations.csv | uniq | grep "UBERON_" > terms.csv.tmp
+csvcut -c SMTSDUBRID input-data/dgtex-sample-annotations.csv | uniq | grep "UBERON_" >> terms.csv.tmp
+echo "term" > output-data/uberon-terms.csv
+sort terms.csv.tmp | uniq >> output-data/uberon-terms.csv
+rm -f terms.csv.tmp
+
+# Get HRA and dGTEx AS overlaps
 sparql-select.sh $LOD queries/construction/all-phenotypes.rq > raw-data/all-phenotypes.csv
+
+# Get all possible phenotypes from HPO
+sparql-select.sh $LOD queries/construction/dgtex-hra-as-overlap.rq > output-data/dgtex-hra-as-overlap.csv
 
 # Get hp-uberon relationships from HPO
 sparql-select-local.sh raw-data/hra-kg-blazegraph.jnl queries/construction/dgtex-phenotype-asct.rq output-data/dgtex-phenotype-asct.csv
@@ -61,5 +71,5 @@ rm -f output-data/dgtex-hra-pop-gene-disease.csv.gz
 gzip -k output-data/dgtex-hra-pop-gene-disease.csv
 
 # Enrich the input annotations with data we gathered here
-cat queries/construction/dgtex-sample-annotations-enriched.sql | duckdb | csvformat | perl -pe 's/http\:\/\/purl\.obolibrary\.org\/obo\/UBERON\_/UBERON:/g;s/http\:\/\/purl\.obolibrary\.org\/obo\/CL\_/CL:/g' > output-data/dgtex-sample-annotations-enriched.csv
+cat queries/construction/dgtex-sample-annotations-enriched.sql | duckdb | csvformat | perl -pe 's/http\:\/\/purl\.obolibrary\.org\/obo\/UBERON\_/UBERON:/g;s/http\:\/\/purl\.obolibrary\.org\/obo\/CL\_/CL:/g;s/NULL//g;' > output-data/dgtex-sample-annotations-enriched.csv
 cat queries/construction/dgtex-sample-annotations-enriched-xlsx.sql | duckdb

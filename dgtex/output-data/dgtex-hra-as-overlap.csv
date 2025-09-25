@@ -1,0 +1,86 @@
+as,as_label,in_hra,in_asctb_table
+http://purl.obolibrary.org/obo/UBERON_0001516,abdominal aorta,true,true
+http://purl.obolibrary.org/obo/UBERON_0001013,adipose tissue,true,true
+http://purl.obolibrary.org/obo/UBERON_0001876,amygdala,true,true
+http://purl.obolibrary.org/obo/UBERON_0001496,ascending aorta,true,true
+http://purl.obolibrary.org/obo/UBERON_0001156,ascending colon,true,true
+http://purl.obolibrary.org/obo/UBERON_0000178,blood,true,true
+http://purl.obolibrary.org/obo/UBERON_0001981,blood vessel,true,true
+http://purl.obolibrary.org/obo/UBERON_0000955,brain,true,true
+http://purl.obolibrary.org/obo/UBERON_0003380,cardiac muscle of left atrium,true,true
+http://purl.obolibrary.org/obo/UBERON_0003379,cardiac muscle of right atrium,true,true
+http://purl.obolibrary.org/obo/UBERON_0001873,caudate nucleus,true,true
+http://purl.obolibrary.org/obo/UBERON_0002037,cerebellum,true,true
+http://purl.obolibrary.org/obo/UBERON_0002345,descending thoracic aorta,true,true
+http://purl.obolibrary.org/obo/UBERON_0004703,dorsal thalamus,true,true
+http://purl.obolibrary.org/obo/UBERON_0002114,duodenum,true,true
+http://purl.obolibrary.org/obo/UBERON_0001043,esophagus,true,true
+http://purl.obolibrary.org/obo/UBERON_0001388,gastrocnemius,true,true
+http://purl.obolibrary.org/obo/UBERON_0000948,heart,true,true
+http://purl.obolibrary.org/obo/UBERON_0002421,hippocampal formation,true,true
+http://purl.obolibrary.org/obo/UBERON_0002116,ileum,true,true
+http://purl.obolibrary.org/obo/UBERON_0002751,inferior temporal gyrus,true,true
+http://purl.obolibrary.org/obo/UBERON_0008523,infrahyoid muscle,true,true
+http://purl.obolibrary.org/obo/UBERON_0002094,interventricular septum,true,true
+http://purl.obolibrary.org/obo/UBERON_0002115,jejunum,true,true
+http://purl.obolibrary.org/obo/UBERON_0002113,kidney,true,true
+http://purl.obolibrary.org/obo/UBERON_0001626,left coronary artery,true,true
+http://purl.obolibrary.org/obo/UBERON_0002107,liver,true,true
+http://purl.obolibrary.org/obo/UBERON_0002048,lung,true,true
+http://purl.obolibrary.org/obo/UBERON_0000029,lymph node,true,true
+http://purl.obolibrary.org/obo/UBERON_0002509,mesenteric lymph node,true,true
+http://purl.obolibrary.org/obo/UBERON_0002378,muscle of abdomen,true,true
+http://purl.obolibrary.org/obo/UBERON_0000383,musculature of body,true,true
+http://purl.obolibrary.org/obo/UBERON_0001021,nerve,true,true
+http://purl.obolibrary.org/obo/UBERON_0000992,ovary,true,true
+http://purl.obolibrary.org/obo/UBERON_0001264,pancreas,true,true
+http://purl.obolibrary.org/obo/UBERON_0001384,primary motor cortex,true,true
+http://purl.obolibrary.org/obo/UBERON_0001874,putamen,true,true
+http://purl.obolibrary.org/obo/UBERON_0001377,quadriceps femoris,true,true
+http://purl.obolibrary.org/obo/UBERON_0001322,sciatic nerve,true,true
+http://purl.obolibrary.org/obo/UBERON_0001159,sigmoid colon,true,true
+http://purl.obolibrary.org/obo/UBERON_0001003,skin epidermis,true,true
+http://purl.obolibrary.org/obo/UBERON_0002108,small intestine,true,true
+http://purl.obolibrary.org/obo/UBERON_0002240,spinal cord,true,true
+http://purl.obolibrary.org/obo/UBERON_0002106,spleen,true,true
+http://purl.obolibrary.org/obo/UBERON_0000945,stomach,true,true
+http://purl.obolibrary.org/obo/UBERON_0002190,subcutaneous adipose tissue,true,true
+http://purl.obolibrary.org/obo/UBERON_0002038,substantia nigra,true,true
+http://purl.obolibrary.org/obo/UBERON_0002370,thymus,true,true
+http://purl.obolibrary.org/obo/UBERON_0003126,trachea,true,true
+http://purl.obolibrary.org/obo/UBERON_0000995,uterus,true,true
+http://purl.obolibrary.org/obo/UBERON_0009835,anterior cingulate cortex,true,false
+http://purl.obolibrary.org/obo/UBERON_0001117,caudate lobe of liver,true,false
+http://purl.obolibrary.org/obo/UBERON_0001155,colon,true,false
+http://purl.obolibrary.org/obo/UBERON_0002363,dura mater,true,false
+http://purl.obolibrary.org/obo/UBERON_0002315,gray matter of spinal cord,true,false
+http://purl.obolibrary.org/obo/UBERON_0002178,left main bronchus,true,false
+http://purl.obolibrary.org/obo/UBERON_0008953,lower lobe of left lung,true,false
+http://purl.obolibrary.org/obo/UBERON_0002171,lower lobe of right lung,true,false
+http://purl.obolibrary.org/obo/UBERON_0010743,meningeal cluster,true,false
+http://purl.obolibrary.org/obo/UBERON_0002174,middle lobe of right lung,true,false
+http://purl.obolibrary.org/obo/UBERON_0001114,right lobe of liver,true,false
+http://purl.obolibrary.org/obo/UBERON_0000473,testis,true,false
+http://purl.obolibrary.org/obo/UBERON_0008952,upper lobe of left lung,true,false
+http://purl.obolibrary.org/obo/UBERON_0002170,upper lobe of right lung,true,false
+http://purl.obolibrary.org/obo/UBERON_0002369,adrenal gland,false,false
+http://purl.obolibrary.org/obo/UBERON_0015474,axilla skin,false,false
+http://purl.obolibrary.org/obo/UBERON_0039167,bronchopulmonary lymph node,false,false
+http://purl.obolibrary.org/obo/UBERON_0003382,cardiac muscle of left ventricle,false,false
+http://purl.obolibrary.org/obo/UBERON_0003381,cardiac muscle of right ventricle,false,false
+http://purl.obolibrary.org/obo/UBERON_0009834,dorsolateral prefrontal cortex,false,false
+http://purl.obolibrary.org/obo/UBERON_0002728,entorhinal cortex,false,false
+http://purl.obolibrary.org/obo/UBERON_0001234,left adrenal gland,false,false
+http://purl.obolibrary.org/obo/UBERON_0013473,lower esophagus,false,false
+http://purl.obolibrary.org/obo/UBERON_0004167,orbitofrontal cortex,false,false
+http://purl.obolibrary.org/obo/UBERON_0005406,perirenal fat,false,false
+http://purl.obolibrary.org/obo/UBERON_0000007,pituitary gland,false,false
+http://purl.obolibrary.org/obo/UBERON_0004002,posterior lobe of cerebellum,false,false
+http://purl.obolibrary.org/obo/UBERON_0034751,primary auditory cortex,false,false
+http://purl.obolibrary.org/obo/UBERON_0008933,primary somatosensory cortex,false,false
+http://purl.obolibrary.org/obo/UBERON_0002436,primary visual cortex,false,false
+http://purl.obolibrary.org/obo/UBERON_0001416,skin of abdomen,false,false
+http://purl.obolibrary.org/obo/UBERON_8480050,skin of calf,false,false
+http://purl.obolibrary.org/obo/UBERON_8480055,subcarinal lymph node,false,false
+http://purl.obolibrary.org/obo/UBERON_0002046,thyroid gland,false,false
+http://purl.obolibrary.org/obo/UBERON_0014454,visceral abdominal adipose tissue,false,false
